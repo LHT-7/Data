@@ -2,6 +2,8 @@
 
 供 Muse 读取和核对的 A 股市场原始日线转换包。数据来自 `D:/QuanData/01_京沪深日线_TDX`，转为按市场、年份划分的 Snappy Parquet。数据包含指数、基金等非普通 A 股证券；正式股票策略须另建历史股票池、复权及可交易状态。
 
+**数据在 [GitHub Release 附件](https://github.com/LHT-7/Data/releases/tag/quandata-tdx-daily-2026-10-15)，不在仓库的 `main` 文件树中。** `git clone` 只会下载本说明、任务说明、清单和 LICENSE，不会下载下方四个 ZIP。获得该私有仓库读取权限后，可用 `gh release download quandata-tdx-daily-2026-10-15 --repo LHT-7/Data --pattern '*.zip'` 下载全部附件；解压后才会看到 `daily/` 目录。
+
 ## Release 附件
 
 | 附件 | SHA256 | 内容 |
