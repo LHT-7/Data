@@ -1,6 +1,6 @@
 # 发给 Muse 的全量数据任务
 
-日线数据已发布到私有 GitHub 仓库 `LHT-7/Data` 的 Release `quandata-tdx-daily-2026-10-15`：https://github.com/LHT-7/Data/releases/tag/quandata-tdx-daily-2026-10-15 。请通过你获得授权的 GitHub 连接下载 `Muse_metadata.zip`、`sh_daily.zip`、`sz_daily.zip`、`bj_daily.zip`。如果没有该私有仓库或 Release 附件的读取权限，请直接说明，不要声称已读取。元数据包内文档所称 `Muse_元数据说明包.zip` 就是 GitHub 上的 `Muse_metadata.zip`，内容完全相同。请先读取元数据包内的 `README.md`、`quality_report.json` 和 `transfer_manifest.csv`，再执行以下工作：
+日线数据已发布到公有 GitHub 仓库 `LHT-7/Data` 的 Release `quandata-tdx-daily-2026-10-15`：https://github.com/LHT-7/Data/releases/tag/quandata-tdx-daily-2026-10-15 。请从 Release 页面下载 `Muse_metadata.zip`、`sh_daily.zip`、`sz_daily.zip`、`bj_daily.zip`。如果下载失败，请直接说明，不要声称已读取。元数据包内文档所称 `Muse_元数据说明包.zip` 就是 GitHub 上的 `Muse_metadata.zip`，内容完全相同。请先读取元数据包内的 `README.md`、`quality_report.json` 和 `transfer_manifest.csv`，再执行以下工作：
 
 注意：`git clone` 不会下载 Release 附件，仓库根目录也没有 `daily/`。如可使用 GitHub CLI，可运行 `gh release download quandata-tdx-daily-2026-10-15 --repo LHT-7/Data --pattern '*.zip'`；解压市场 ZIP 后，`daily/` 才会出现。
 

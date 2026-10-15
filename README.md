@@ -2,7 +2,7 @@
 
 供 Muse 读取和核对的 A 股市场原始日线转换包。数据来自 `D:/QuanData/01_京沪深日线_TDX`，转为按市场、年份划分的 Snappy Parquet。数据包含指数、基金等非普通 A 股证券；正式股票策略须另建历史股票池、复权及可交易状态。
 
-**数据在 [GitHub Release 附件](https://github.com/LHT-7/Data/releases/tag/quandata-tdx-daily-2026-10-15)，不在仓库的 `main` 文件树中。** `git clone` 只会下载本说明、任务说明、清单和 LICENSE，不会下载下方四个 ZIP。获得该私有仓库读取权限后，可用 `gh release download quandata-tdx-daily-2026-10-15 --repo LHT-7/Data --pattern '*.zip'` 下载全部附件；解压后才会看到 `daily/` 目录。
+**数据在 [GitHub Release 附件](https://github.com/LHT-7/Data/releases/tag/quandata-tdx-daily-2026-10-15)，不在仓库的 `main` 文件树中。** `git clone` 只会下载本说明、任务说明、清单和 LICENSE，不会下载下方四个 ZIP。现在仓库已公开，可直接从 Release 页面下载；也可用 `gh release download quandata-tdx-daily-2026-10-15 --repo LHT-7/Data --pattern '*.zip'` 下载全部附件。解压后才会看到 `daily/` 目录。
 
 ## Release 附件
 
@@ -15,7 +15,7 @@
 
 总计 80 个 Parquet 分片、29,855,757 行。逐片 SHA256 和行数在 `Muse_metadata.zip` 内的 `transfer_manifest.csv` 中；每片也有同名前缀的 `.quality.json`。所有 ZIP 内的日线文件都保留 `daily/` 目录结构。元数据包内文档沿用本地文件名 `Muse_元数据说明包.zip`，与 GitHub 上的 `Muse_metadata.zip` 是同一份字节内容。
 
-仓库为私有仓库。Muse 需要获得该仓库的读取权限，才能下载 Release 附件。
+仓库为公有仓库，Release 附件可公开读取。
 
 ## Muse 核对要求
 
