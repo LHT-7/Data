@@ -20,3 +20,7 @@
 ## Muse 核对要求
 
 下载四个附件后，先验上表的附件 SHA256，再解压并逐片核对 `transfer_manifest.csv` 中的 SHA256、行数和 80 片是否齐全。对异常记录按 `anomalies_*.csv` 定位，不要悄悄删除。原始价未复权，回测收益率只可用于流程演示。
+
+## 其他两个原始数据包
+
+`02_股票数据包` 与 `03_财务数据包` 的结构化版本见 [扩展数据 Release](https://github.com/LHT-7/Data/releases/tag/quandata-tdx-extended-2026-10-15)，详见 [EXTENDED_DATA.md](EXTENDED_DATA.md)。第二包只保留未核实含义的原始字段编号；第三包没有实际披露时间和历史修订版本，均不可直接用于正式财务策略收益评估。
